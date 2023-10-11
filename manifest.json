@@ -5,14 +5,14 @@
     "description": "Hide Reddit posts based on keywords",
     "permissions": ["activeTab", "storage"],
     "icons": {
-      "48": "icon.png"
+      "48": "images/icon.png"
     },
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
+        "16": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
       }
     },
     "content_scripts": [
