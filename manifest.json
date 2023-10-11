@@ -1,18 +1,21 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Reddit Post Hider",
-    "version": "1.0",
+    "version": "0.2",
     "description": "Hide Reddit posts based on keywords",
-    "permissions": ["activeTab", "storage"],
+    "permissions": [
+      "activeTab",
+      "storage",
+      "*://*.reddit.com/*"
+    ],
     "icons": {
-      "48": "images/icon.png"
+      "48": "images/icon.png" // Specify the path to the icon inside the images folder
     },
-    "action": {
+    "browser_action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "images/icon.png",
-        "48": "images/icon.png",
-        "128": "images/icon.png"
+        "16": "images/icon.png", // Also specify the path here
+        "48": "images/icon.png"
       }
     },
     "content_scripts": [
@@ -21,6 +24,10 @@
         "js": ["content.js"],
         "run_at": "document_end"
       }
-    ]
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    }
   }
   
