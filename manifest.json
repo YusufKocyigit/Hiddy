@@ -9,12 +9,12 @@
       "*://*.reddit.com/*"
     ],
     "icons": {
-      "48": "images/icon.png" // Specify the path to the icon inside the images folder
+      "48": "images/icon.png" 
     },
     "browser_action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "images/icon.png", // Also specify the path here
+        "16": "images/icon.png", 
         "48": "images/icon.png"
       }
     },

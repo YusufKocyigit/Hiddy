@@ -6,9 +6,10 @@ chrome.storage.sync.get({ keywords: [] }, function (result) {
 
   for (const heading of headings) {
     const headingText = heading.textContent;
+    const titleText = headingText.toLowerCase();
 
     for (const keyword of keywords) {
-      if (headingText.includes(keyword)) {
+      if (titleText.includes(keyword)) {
         heading.style.backgroundColor = "red";
         console.log("Highlighted heading: " + headingText);
       }
