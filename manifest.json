@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "Reddit Post Hider",
+    "name": "Hiddy",
     "version": "0.5.1",
     "description": "Hide Reddit posts based on keywords",
     "permissions": [
